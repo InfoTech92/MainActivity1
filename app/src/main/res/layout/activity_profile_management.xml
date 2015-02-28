@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ScrollView01"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:scrollbars="none" >
+
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:background="@drawable/main_header_selector" >
+		
+		
+		    <com.stepcounter.mainactivity.RoundedImageView
+		        android:id="@+id/circularImage"
+		        android:layout_width="80dp"
+		        android:layout_height="80dp"
+		        android:src="@drawable/profile_image"
+		        android:layout_gravity="center"/>
+		
+		    <TextView
+		          android:id="@+id/profileManagementActivityNameTextView"
+		          android:layout_width="100dip"
+		          android:layout_height="40dip"
+		          android:textColor="@color/blue"
+		          android:layout_toRightOf="@+id/circularImage"
+		          android:layout_toEndOf="@+id/circularImage"
+		          android:layout_alignTop="@+id/circularImage"
+		          android:text="@string/profile_management_activity_name_text_view"
+		          />
+		    <EditText
+		          android:id="@+id/profileManagementActivityNameEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_toRightOf="@id/profileManagementActivityNameTextView"
+		          android:layout_toEndOf="@id/profileManagementActivityNameTextView"
+		          android:layout_alignBottom="@+id/profileManagementActivityNameTextView"
+		          android:inputType="text">
+		    </EditText>
+		    
+		    
+		    
+		    <TextView
+		          android:id="@+id/profileManagementActivitySurnameTextView"
+		          android:layout_width="100dip"
+		          android:layout_height="40dip"
+		          android:layout_below="@id/profileManagementActivityNameTextView"
+		          android:textColor="@color/blue"
+		          android:layout_toRightOf="@+id/circularImage"
+		          android:layout_toEndOf="@+id/circularImage"
+		          android:layout_alignBottom="@+id/circularImage"
+		          android:text="@string/profile_management_activity_surname_text_view" />
+		    <EditText
+		          android:id="@+id/profileManagementActivitySurnameEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_toRightOf="@id/profileManagementActivitySurnameTextView"
+		          android:layout_toEndOf="@id/profileManagementActivitySurnameTextView"
+		          android:layout_below="@id/profileManagementActivityNameEditText"
+		          android:inputType="text">
+		    </EditText>
+		    
+		    
+		    
+		    
+		    <ImageView
+			    android:id="@+id/heightImage"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="2dp"
+			    android:src="@drawable/height_image"
+				android:layout_below="@id/profileManagementActivitySurnameTextView"
+		    	android:contentDescription="@string/profile_management_activity_height_image_description" />
+		    <TextView
+		          android:id="@+id/profileManagementActivityHeightTextView"
+		          android:layout_width="80dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_below="@id/profileManagementActivitySurnameTextView"
+		          android:layout_toRightOf="@id/heightImage"
+		          android:layout_toEndOf="@id/heightImage"
+		          android:textColor="@color/blue"
+		          android:text="@string/profile_management_activity_height_text_view"
+		          android:layout_alignBaseline="@id/heightImage" />
+		    <EditText
+		          android:id="@+id/profileManagementActivityHeightEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_toRightOf="@id/profileManagementActivityHeightTextView"
+		          android:layout_toEndOf="@id/profileManagementActivityHeightTextView"
+		          android:textColor="@color/blue"
+		          android:layout_below="@id/profileManagementActivitySurnameEditText"
+		          android:inputType="number"
+		          android:layout_alignBaseline="@id/heightImage">
+		    </EditText>
+		    
+		    
+		    
+		    
+		    <ImageView
+			    android:id="@+id/weightImage"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="2dp"
+			    android:src="@drawable/weight_image"
+			    android:layout_below="@id/heightImage"
+		    	android:contentDescription="@string/profile_management_activity_weight_image_description" />
+		    <TextView
+		          android:id="@+id/profileManagementActivityWeightTextView"
+		          android:layout_width="80dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_below="@id/profileManagementActivityHeightTextView"
+		          android:layout_toRightOf="@id/weightImage"
+		          android:layout_toEndOf="@id/weightImage"
+		          android:layout_alignBaseline="@id/weightImage"
+		          android:text="@string/profile_management_activity_weight_text_view"
+		          android:textColor="@color/blue" />
+		    <EditText
+		          android:id="@+id/profileManagementActivityWeightEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_toRightOf="@id/profileManagementActivityWeightTextView"
+		          android:layout_toEndOf="@id/profileManagementActivityWeightTextView"
+		          android:layout_below="@id/profileManagementActivityHeightEditText"
+		          android:inputType="number"
+		          android:textColor="@color/blue"
+		          android:layout_alignBaseline="@id/weightImage">
+		    </EditText>
+		    
+		    
+		    <ImageView
+			    android:id="@+id/stepImage"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="2dp"
+			    android:src="@drawable/step_image"
+			    android:layout_below="@id/weightImage"
+		    	android:contentDescription="@string/profile_management_activity_step_image_description" />
+		    <TextView
+		          android:id="@+id/profileManagementActivityStepLengthTextView"
+		          android:layout_width="80dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_below="@id/profileManagementActivityWeightTextView"
+		          android:layout_toRightOf="@id/stepImage"
+		          android:layout_toEndOf="@id/stepImage"
+		          android:text="@string/profile_management_activity_step_length_text_view"
+		          android:textColor="@color/blue"
+		          android:layout_alignBaseline="@id/stepImage" />
+		    <EditText
+		          android:id="@+id/profileManagementActivityStepLengthEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_toRightOf="@id/profileManagementActivityStepLengthTextView"
+		          android:layout_toEndOf="@id/profileManagementActivityStepLengthTextView"
+		          android:layout_below="@id/profileManagementActivityWeightEditText"
+		          android:inputType="number"
+		          android:layout_alignBaseline="@id/stepImage">
+		    </EditText>
+		    
+		    
+		    <ImageView
+			    android:id="@+id/genderImage"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="2dp"
+			    android:src="@drawable/gender_image"
+			    android:layout_below="@id/stepImage"
+		    	android:contentDescription="@string/profile_management_activity_gender_image_description" />
+		    <TextView
+		          android:id="@+id/profileManagementActivityGenderTextView"
+		          android:layout_width="80dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_toRightOf="@id/genderImage"
+		          android:layout_toEndOf="@id/genderImage"
+		          android:layout_below="@id/profileManagementActivityStepLengthTextView"
+		          android:text="@string/profile_management_activity_gender_text_view"
+		          android:textColor="@color/blue"
+		          android:layout_alignBaseline="@id/genderImage" />
+		    <EditText
+		          android:id="@+id/profileManagementActivityGenderEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_toRightOf="@id/profileManagementActivityGenderTextView"
+		          android:layout_toEndOf="@id/profileManagementActivityGenderTextView"
+		          android:layout_below="@id/profileManagementActivityStepLengthEditText"
+		          android:inputType="text"
+		          android:layout_alignBaseline="@id/genderImage">
+		    </EditText>
+		    
+		    
+		    
+		    
+		    
+		     <TextView
+		          android:id="@+id/profileManagementActivityXTextView"
+		          android:layout_width="80dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_marginLeft="40dp"
+		          android:layout_marginStart="40dp"
+		          android:layout_below="@id/genderImage"
+		          android:text="@string/profile_management_activity_x_text_view"
+		          android:textColor="@color/blue" />
+		    <EditText
+		          android:id="@+id/profileManagementActivityXEditText"
+		          android:layout_width="120dip"
+		          android:layout_height="40dip"
+		          android:layout_marginTop="2dp"
+		          android:layout_toRightOf="@id/profileManagementActivityXTextView"
+		          android:layout_toEndOf="@id/profileManagementActivityXTextView"
+		          android:layout_below="@id/genderImage"
+		          android:inputType="text">
+		    </EditText>
+		    
+		    
+		    
+		    
+		    <Button
+		        android:id="@+id/btnProfileManagementActivitySave" 
+		        android:layout_width="100dip"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/profileManagementActivityXTextView"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentEnd="true"
+		        android:text="@string/profile_management_activity_save_text" 
+		        android:layout_marginTop="10dip"
+		        android:textColor="@color/yellow"
+		        android:background="@drawable/button_selector">
+		
+		    </Button>
+		    
+		    
+		    <RelativeLayout 
+			    android:id="@+id/el1p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:background="@drawable/workout_activity_measurements_selector"
+			    android:layout_below="@id/btnProfileManagementActivitySave">
+			    
+			        <ImageView
+				        android:id="@+id/roadImage"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:src="@drawable/road_icon_image"
+				        android:contentDescription="@string/profile_management_activity_road_icon_description"/>
+				        
+			        
+			        <TextView
+				        android:id="@+id/textViewKm"
+				        android:layout_width="80dp"
+				        android:layout_height="wrap_content"
+				        android:text="@string/profile_management_activity_km_text_view"
+				        android:layout_toRightOf="@id/roadImage"
+				        android:layout_toEndOf="@id/roadImage"
+				        android:textSize="30sp"
+				        android:textColor="@color/blue"/>
+				        
+			</RelativeLayout>
+				    
+				    
+				    
+			<RelativeLayout 
+			    android:id="@+id/el2p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector"
+			    android:layout_below="@id/btnProfileManagementActivitySave">
+				    
+			        <ImageView
+				        android:id="@+id/stepsImage"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:src="@drawable/steps_stickman_image"
+				        android:contentDescription="@string/profile_management_activity_steps_stickman_image_description"/>
+			        
+			        
+			        <TextView
+				        android:id="@+id/textViewTotalSteps"
+				        android:layout_width="80dp"
+				        android:layout_height="wrap_content"
+				        android:text=""
+				        android:layout_toRightOf="@id/stepsImage"
+				        android:layout_toEndOf="@id/stepsImage"
+				        android:textSize="30sp"
+				        android:textColor="@color/blue"/>
+			        
+			</RelativeLayout>
+				    
+				    
+				    
+				    
+				    
+			<RelativeLayout 
+			    android:id="@+id/el3p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_below="@id/el1p"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/clock2Image"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/clock2_image"
+			        android:contentDescription="@string/profile_management_activity_clock2_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewTotalTime"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/profile_management_activity_total_time_text_view"
+			        android:layout_toRightOf="@id/clock2Image"
+			        android:layout_toEndOf="@id/clock2Image"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+				    
+			
+				   
+			
+				    
+		    <RelativeLayout 
+			    android:id="@+id/el4p"
+			    android:layout_below="@id/el1p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/stickmanTapisRoulantImage"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/tachimeter1_image"
+			        android:contentDescription="@string/profile_management_activity_stickman_tapis_roulant_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewTotalKcals"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        android:layout_toRightOf="@id/stickmanTapisRoulantImage"
+			        android:layout_toEndOf="@id/stickmanTapisRoulantImage"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+    
+		    
+		    
+		    
+		    
+			<com.stepcounter.mainactivity.RoundedImageView
+			   android:id="@+id/circularImage2"
+			   android:layout_width="25dp"
+			   android:layout_height="25dp"
+			   android:src="@drawable/reset_image"
+			   android:layout_centerHorizontal="true"
+			   android:layout_below="@id/el4p"/>
+		    
+			
+		</RelativeLayout>
+
+	</LinearLayout>
+	
+</ScrollView>

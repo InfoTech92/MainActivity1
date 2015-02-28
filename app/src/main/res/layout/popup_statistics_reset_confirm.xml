@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/statistics_reset_confirm_popup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new_workout_popup_selector" >
+    
+    
+    <TextView
+          android:id="@+id/statisticsResetConfirmPopupMessageTextView"
+          android:layout_width="250dip"
+          android:layout_height="wrap_content"
+          android:textSize="15sp"
+          android:textColor="@color/black"
+          android:text="@string/statistics_reset_confirm_popup_message" />
+    
+    
+    
+    <Button
+        android:id="@+id/statisticsResetConfirmPopupCancelButton"
+        android:layout_width="130dip"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/statisticsResetConfirmPopupMessageTextView"
+        android:text="@string/statistics_reset_confirm_popup_cancel"
+        android:background="@drawable/new_workout_popup_button_selector" />
+    <Button
+        android:id="@+id/statisticsResetConfirmPopupConfirmButton"
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/statisticsResetConfirmPopupCancelButton"
+        android:layout_toEndOf="@id/statisticsResetConfirmPopupCancelButton"
+        android:layout_below="@id/statisticsResetConfirmPopupMessageTextView"
+        android:text="@string/workout_elimination_confirm_popup_confirm"
+        android:background="@drawable/new_workout_popup_button_selector"  />
+    
+
+</RelativeLayout>

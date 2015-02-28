@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ScrollView01"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:scrollbars="none" >
+
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	
+		<RelativeLayout 
+		    android:id="@+id/activity_workout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:background="@drawable/main_header_selector">
+		
+		
+		
+		    
+		    <ImageView
+			    android:id="@+id/shoeImage1"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/left_shoe_image"
+			    android:layout_marginTop="50dp"
+		    	android:contentDescription="@string/workout_activity_left_shoe_description" />
+		    
+		
+			<ImageView
+			    android:id="@+id/shoeImage2"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:layout_toEndOf="@id/shoeImage1"
+		       	android:layout_toRightOf="@id/shoeImage1"
+			    android:src="@drawable/right_shoe_image"
+			    android:layout_marginTop="50dp"
+			    android:contentDescription="@string/workout_activity_right_shoe_description" />
+			
+			
+			<TextView
+			    android:id="@+id/textStepCount"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="80sp"
+			    android:textColor="@color/blue"
+			    android:layout_toEndOf="@id/shoeImage2"
+		       	android:layout_toRightOf="@id/shoeImage2"
+			    android:text="@string/workout_activity_counter_init"
+			    android:contentDescription="@string/workout_activity_positioning_image_description"
+			    />
+			
+		
+		    
+			
+			<ImageView
+		        android:id="@+id/btnStop"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/stop_button_image"
+		        android:layout_below="@id/shoeImage2"
+		        android:onClick="MainActivityListener"
+		        android:layout_alignRight="@id/textStepCount"
+		        android:layout_alignEnd="@id/textStepCount"
+		        android:contentDescription="@string/workout_activity_stop_button_description"/>
+			
+			
+		    <ImageView
+		        android:id="@+id/btnStart"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/play_button_image"
+		        android:onClick="MainActivityListener"
+		        android:layout_below="@id/shoeImage1"
+		        android:layout_toStartOf="@id/btnStop"
+		       	android:layout_toLeftOf="@id/btnStop"
+		        android:contentDescription="@string/workout_activity_play_button_description"/>
+		
+		
+		    
+		    
+		   
+		    
+		     
+		    
+		    
+		    
+		    <TextView
+		        android:id="@+id/textViewClock"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/btnStop"
+		        android:text="@string/workout_activity_clock_init"
+		        android:layout_alignRight="@id/btnStop"
+		        android:layout_alignEnd="@id/btnStop"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		    
+		    
+		    
+		    <ImageView
+		        android:id="@+id/clockImage"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:src="@drawable/clock_image"
+		        android:layout_below="@id/btnStart"
+		        android:onClick="MainActivityListener"
+		        android:layout_toLeftOf="@id/textViewClock"
+		        android:layout_toStartOf="@id/textViewClock"
+		        android:contentDescription="@string/workout_activity_clock_image_description"/>
+		    
+		   
+		   
+		    <com.stepcounter.mainactivity.VerticalBar
+			  android:id="@+id/seekBar1"
+			  android:layout_width="wrap_content"
+			  android:layout_height="200dp"
+			  android:layout_alignParentRight="true"
+			  android:layout_alignParentEnd="true" 
+			  android:layout_marginRight="10dp"
+			  android:layout_marginEnd="10dp"
+			  android:progressDrawable="@drawable/progress"
+		      android:thumb="@drawable/thumb" 
+			  />
+		   
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    <RelativeLayout 
+		    android:id="@+id/el1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="2dp"
+		    android:background="@drawable/workout_activity_measurements_selector"
+		    android:layout_below="@id/clockImage">
+		    
+		        <ImageView
+		        android:id="@+id/tachimeterImage1"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/tachimeter1_image"
+		        android:contentDescription="@string/workout_activity_tachimeter1_symbol_image_description"/>
+		        
+		        
+		        <TextView
+		        android:id="@+id/textViewCurrentSpeedKmH"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/workout_activity_current_speed_kmh_text_view"
+		        android:layout_toRightOf="@id/tachimeterImage1"
+		        android:layout_toEndOf="@id/tachimeterImage1"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		        
+		        
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    <RelativeLayout 
+		    android:id="@+id/el2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="2dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentEnd="true"
+		    android:background="@drawable/workout_activity_measurements_selector"
+		    android:layout_below="@id/clockImage">
+		    
+		        <ImageView
+		        android:id="@+id/positionImage"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/position_symbol_image"
+		        android:contentDescription="@string/workout_activity_position_symbol_image_description"/>
+		        
+		        
+		        <TextView
+		        android:id="@+id/textViewKm"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/workout_activity_km_text_view"
+		        android:layout_toRightOf="@id/positionImage"
+		        android:layout_toEndOf="@id/positionImage"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		        
+		        
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    
+		    
+		    
+		    <RelativeLayout 
+		    android:id="@+id/el3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="2dp"
+		    android:layout_below="@id/el1"
+		    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+		        android:id="@+id/tachimeterImage2"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/tachimeter2_image"
+		        android:contentDescription="@string/workout_activity_tachimeter2_symbol_image_description"/>
+		        
+		        
+		        <TextView
+		        android:id="@+id/textViewMeanSpeedKmH"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/workout_activity_mean_speed_kmh_text_view"
+		        android:layout_toRightOf="@id/tachimeterImage2"
+		        android:layout_toEndOf="@id/tachimeterImage2"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		        
+		        
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    <RelativeLayout 
+			    android:id="@+id/el4"
+			    android:layout_below="@id/el1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/feetImage"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/feet_symbol_image"
+			        android:contentDescription="@string/workout_activity_feet_symbol_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewCurrentSpeedStepsMin"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/workout_activity_current_speed_steps_min_text_view"
+			        android:layout_toRightOf="@id/feetImage"
+			        android:layout_toEndOf="@id/feetImage"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    <RelativeLayout 
+			    android:id="@+id/el5"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:background="@drawable/workout_activity_measurements_selector"
+			    android:layout_below="@id/el3">
+		    
+		        <ImageView
+			        android:id="@+id/tachimeterImage3"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/tachimeter3_image"
+			        android:contentDescription="@string/workout_activity_tachimeter3_symbol_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewMeanSpeedLastX"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/workout_activity_mean_speed_last_x_meters_text_view"
+			        android:layout_toRightOf="@id/tachimeterImage3"
+			        android:layout_toEndOf="@id/tachimeterImage3"
+			        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    <RelativeLayout 
+			    android:id="@+id/el6"
+			    android:layout_below="@id/el3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/shoeImage"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/tachimeter1_image"
+			        android:contentDescription="@string/workout_activity_shoe_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewStepsNumberLastX"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/workout_activity_steps_number_last_x_text_view"
+			        android:layout_toRightOf="@id/shoeImage"
+			        android:layout_toEndOf="@id/shoeImage"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    
+		    
+		    <ImageView
+		        android:id="@+id/profileImageWorkoutActivity"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/profile_image"
+		        android:layout_below="@id/el6"
+		        android:contentDescription="@string/workout_activity_tachimeter1_symbol_image_description"/>
+		    
+		    
+		    <TextView
+		        android:id="@+id/userNameWorkoutActivity"
+		        android:layout_width="150dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/workout_activity_user_name_text_view"
+		        android:layout_toRightOf="@id/profileImageWorkoutActivity"
+		        android:layout_toEndOf="@id/profileImageWorkoutActivity"
+		        android:layout_alignTop="@id/profileImageWorkoutActivity"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		    
+		    
+		    <TextView
+		        android:id="@+id/stepLengthWorkoutActivity"
+		        android:layout_width="150dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/workout_activity_step_len_text_view"
+		        android:layout_toRightOf="@id/profileImageWorkoutActivity"
+		        android:layout_toEndOf="@id/profileImageWorkoutActivity"
+		        android:layout_alignBottom="@id/profileImageWorkoutActivity"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		    
+		   
+		   
+		</RelativeLayout>
+		
+		
+		
+	
+	</LinearLayout>
+
+</ScrollView>

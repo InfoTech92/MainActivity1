@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true"
+	android:scrollbars="none" >
+
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:background="@drawable/main_header_selector" >
+		    
+		    
+		    <com.stepcounter.mainactivity.RoundedImageView
+		        android:id="@+id/circularImageWorkoutStatisticsActivity"
+		        android:layout_width="230dp"
+		        android:layout_height="230dp"
+		        android:src="@drawable/profile_image"
+		        android:layout_gravity="center"/>
+		    
+		    
+		    
+		    <TextView
+		        android:id="@+id/userNameTextviewWorkoutStatisticsActivity"
+		        android:layout_width="wrap_content"
+		        android:layout_height="50dp"
+			    android:layout_marginBottom="5dp"
+		        android:text=""
+		        android:layout_toRightOf="@id/circularImageWorkoutStatisticsActivity"
+		        android:layout_toEndOf="@id/circularImageWorkoutStatisticsActivity"
+		        android:layout_alignTop="@id/circularImageWorkoutStatisticsActivity"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		    
+		    <TextView
+		        android:id="@+id/trainingNameTextViewWorkoutStatisticsActivity"
+		        android:layout_width="wrap_content"
+		        android:layout_height="50dp"
+		        android:layout_marginTop="5dp"
+			    android:layout_marginBottom="5dp"
+		        android:text=""
+		        android:layout_toRightOf="@id/circularImageWorkoutStatisticsActivity"
+		        android:layout_toEndOf="@id/circularImageWorkoutStatisticsActivity"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		    
+		    
+			<TextView
+			   android:id="@+id/trainingDateWorkoutStatisticsActivity"
+			   android:layout_width="wrap_content"
+			   android:layout_height="50dp"
+			   android:layout_marginTop="5dp"
+			   android:layout_marginBottom="5dp"
+			   android:text=""
+			   android:layout_toRightOf="@id/circularImageWorkoutStatisticsActivity"
+			   android:layout_toEndOf="@id/circularImageWorkoutStatisticsActivity"
+			   android:textSize="30sp"
+			   android:textColor="@color/blue"/>
+			
+			
+			 <TextView
+			   android:id="@+id/trainingTimeWorkoutStatisticsActivity"
+			   android:layout_width="wrap_content"
+			   android:layout_height="50dp"
+			   android:layout_marginTop="5dp"
+			   android:text=""
+			   android:layout_toRightOf="@id/circularImageWorkoutStatisticsActivity"
+			   android:layout_toEndOf="@id/circularImageWorkoutStatisticsActivity"
+			   android:textSize="30sp"
+			   android:textColor="@color/blue"/>
+		    
+		    
+		    
+		    
+		    
+		    <com.jjoe64.graphview.GraphView
+		        android:layout_below="@id/circularImageWorkoutStatisticsActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="200dip"
+		        android:id="@+id/graph" /> 
+		        
+		    
+		    
+		    
+		    <RelativeLayout 
+			    android:id="@+id/el1p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="10dp"
+			    android:background="@drawable/workout_activity_measurements_selector"
+			    android:layout_below="@id/btnProfileManagementActivitySave">
+			    
+			        <ImageView
+				        android:id="@+id/roadImageWorkoutStatisticsActivity"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:src="@drawable/road_icon_image"
+				        android:contentDescription="@string/profile_management_activity_road_icon_description"/>
+				        
+			        
+			        <TextView
+				        android:id="@+id/textViewKm"
+				        android:layout_width="80dp"
+				        android:layout_height="wrap_content"
+				        android:text=""
+				        android:layout_toRightOf="@id/roadImageWorkoutStatisticsActivity"
+				        android:layout_toEndOf="@id/roadImageWorkoutStatisticsActivity"
+				        android:textSize="30sp"
+				        android:textColor="@color/blue"/>
+				        
+			</RelativeLayout>
+				    
+				    
+				    
+			<RelativeLayout 
+			    android:id="@+id/el2p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector"
+			    android:layout_below="@id/profileManagementActivityXTextView">
+				    
+			        <ImageView
+				        android:id="@+id/stepsImageWorkoutStatisticsActivity"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:src="@drawable/steps_stickman_image"
+				        android:contentDescription="@string/workout_statistics_activity_steps_stickman_image_description"/>
+			        
+			        
+			        <TextView
+				        android:id="@+id/textViewTotalSteps"
+				        android:layout_width="80dp"
+				        android:layout_height="wrap_content"
+				        android:text=""
+				        android:layout_toRightOf="@id/stepsImageWorkoutStatisticsActivity"
+				        android:layout_toEndOf="@id/stepsImageWorkoutStatisticsActivity"
+				        android:textSize="30sp"
+				        android:textColor="@color/blue"/>
+			        
+			</RelativeLayout>
+				    
+				    
+				    
+				    
+				    
+			<RelativeLayout 
+			    android:id="@+id/el3p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_below="@id/el1p"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/clock2ImageWorkoutStatisticsActivity"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/clock2_image"
+			        android:contentDescription="@string/workout_statistics_activity_clock2_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewTotalTime"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        android:layout_toRightOf="@id/clock2ImageWorkoutStatisticsActivity"
+			        android:layout_toEndOf="@id/clock2ImageWorkoutStatisticsActivity"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+				    
+			
+			
+				    
+		    <RelativeLayout 
+			    android:id="@+id/el4p"
+			    android:layout_below="@id/el1p"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/stickmanTapisRoulantImageWorkoutStatisticsActivity"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/tachimeter1_image"
+			        android:contentDescription="@string/workout_statistics_activity_stickman_tapis_roulant_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewTotalKcals"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        android:layout_toRightOf="@id/stickmanTapisRoulantImageWorkoutStatisticsActivity"
+			        android:layout_toEndOf="@id/stickmanTapisRoulantImageWorkoutStatisticsActivity"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+				    
+		   
+		    
+		    
+		    <RelativeLayout 
+		    android:id="@+id/el5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="2dp"
+		    android:layout_below="@id/el3"
+		    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+		        android:id="@+id/tachimeterImage2WorkoutStatisticsActivity"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/tachimeter2_image"
+		        android:contentDescription="@string/workout_statistics_activity_tachimeter2_symbol_image_description"/>
+		        
+		        
+		        <TextView
+		        android:id="@+id/textViewMeanSpeedKmH"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/workout_activity_mean_speed_kmh_text_view"
+		        android:layout_toRightOf="@id/tachimeterImage2WorkoutStatisticsActivity"
+		        android:layout_toEndOf="@id/tachimeterImage2WorkoutStatisticsActivity"
+		        android:textSize="30sp"
+		        android:textColor="@color/blue"/>
+		        
+		        
+		        
+		    </RelativeLayout>
+		    
+		    
+		  
+		    
+		    
+		    <RelativeLayout 
+			    android:id="@+id/el6"
+			    android:layout_below="@id/el3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="2dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentEnd="true"
+			    android:background="@drawable/workout_activity_measurements_selector">
+		    
+		        <ImageView
+			        android:id="@+id/feetImageWorkoutStatisticsActivity"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/feet_symbol_image"
+			        android:contentDescription="@string/workout_statistics_activity_feet_symbol_image_description"/>
+		        
+		        
+		        <TextView
+			        android:id="@+id/textViewCurrentSpeedStepsMin"
+			        android:layout_width="80dp"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        android:layout_toRightOf="@id/feetImageWorkoutStatisticsActivity"
+			        android:layout_toEndOf="@id/feetImageWorkoutStatisticsActivity"
+			        android:textSize="30sp"
+			        android:textColor="@color/blue"/>
+		        
+		    </RelativeLayout>
+				    
+				      
+		    
+		    
+		    
+		</RelativeLayout>
+	
+	
+	</LinearLayout>
+
+</ScrollView>

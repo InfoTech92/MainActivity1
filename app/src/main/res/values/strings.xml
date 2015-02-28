@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    
+    
+    <!-- Generals -->
+    <string name="app_name">MainActivity</string>
+	<string name="action_settings">Settings</string>
+    
+	
+	
+    <!-- Main Activity Strings-->
+    <string name="main_activity_name">MainActivity</string>
+    <string name="main_activity_title">Contapassi v1.0</string>
+    <string name="main_activity_new_workout_button">Nuovo</string>
+    <string name="main_activity_view_workouts_button">Allenamenti</string>
+    <string name="main_activity_profile_management_button">Mio Profilo</string>
+    
+    
+    
+    <!-- New Workout Popup Strings -->
+    <string name="new_workout_popup_name">NewWorkoutActivity</string>
+    <string name="new_workout_popup_btn_start_workout">Inizia Allenamento</string>
+    
+    
+    
+    <!-- View wWrkouts Activity Strings -->
+    <string name="view_workouts_activity_name">ViewWorkoutsActivity</string>
+    <string name="view_workouts_activity_eye_symbol_image_description">Eye Symbol Image</string>
+    <string name="view_workouts_activity_share_symbol_image_description">Share Symbol Image</string>
+    <string name="view_workouts_activity_trash_can_symbol_image_description">Trash Can Symbol Image</string>
+    <string name="view_workouts_activity_title">Lista Allenamenti</string>
+    
+    
+    
+    <!-- Workout Activity Strings -->
+    <string name="workout_activity_name">WorkoutActivity</string>
+    <string name="workout_activity_right_shoe_description">Scarpa Destra</string>
+    <string name="workout_activity_left_shoe_description">Scarpa Sinistra</string>
+    <string name="workout_activity_circle_image_description">Cerchio</string>
+    <string name="workout_activity_play_button_description">Play</string>
+    <string name="workout_activity_pause_button_description">Pause</string>
+    <string name="workout_activity_stop_button_description">Stop</string>
+    <string name="workout_activity_positioning_image_description">PositioningImage</string>
+    <string name="workout_activity_clock_image_description">ClockImage</string>
+    <string name="workout_activity_clock_init">0:00:000</string>
+    <string name="workout_activity_counter_init">00</string>
+    <string name="workout_activity_tachimeter1_symbol_image_description">Current Speed Symbol</string>
+    <string name="workout_activity_tachimeter2_symbol_image_description">Mean Speed Symbol</string>
+    <string name="workout_activity_tachimeter3_symbol_image_description">Mean Speed on last x meters Symbol</string>
+    <string name="workout_activity_position_symbol_image_description">Movement symbol</string>
+    <string name="workout_activity_feet_symbol_image_description">Feet symbol</string>
+    <string name="workout_activity_shoe_image_description">Shoe symbol</string>
+    <string name="workout_activity_current_speed_kmh_text_view"></string>
+    <string name="workout_activity_km_text_view"></string>
+    <string name="workout_activity_mean_speed_kmh_text_view"></string>
+    <string name="workout_activity_current_speed_steps_min_text_view"></string>
+    <string name="workout_activity_mean_speed_last_x_meters_text_view"></string>
+    <string name="workout_activity_steps_number_last_x_text_view"></string>
+   	<string name="workout_activity_user_name_text_view"></string>
+   	<string name="workout_activity_step_len_text_view"></string>
+    
+    
+    
+    <!-- Workout End Activity Strings -->
+    <string name="workout_end_activity_name">workoutEndActivity</string>
+    <string name="workout_end_activity_title">Allenamento Completato</string>
+    <string name="workout_end_activity_share_button">Condividi</string>
+    <string name="workout_end_activity_graphic_button">Vedi Grafico</string>
+    <string name="workout_end_activity_exit_no_save_button">Esci Senza Salvare</string>
+    <string name="workout_end_activity_exit_save_button">Esci e Salva</string>
+    
+    
+    
+    <!-- Profile Management Activity Strings -->
+    <string name="profile_management_activity_name">ProfileManagement</string>
+    <string name="profile_management_activity_name_text_view">Nome</string>
+    <string name="profile_management_activity_surname_text_view">Cognome</string>
+    <string name="profile_management_activity_height_text_view">Altezza</string>
+    <string name="profile_management_activity_weight_text_view">Peso</string>
+    <string name="profile_management_activity_step_length_text_view">Lungh. Passo</string>
+    <string name="profile_management_activity_gender_text_view">Sesso</string>
+    <string name="profile_management_activity_x_text_view">X</string>
+    <string name="profile_management_activity_statistics_text">Statistiche</string>
+    <string name="profile_management_activity_save_text">Salva</string>
+    <string name="profile_management_activity_height_image_description">Height Image</string>
+    <string name="profile_management_activity_weight_image_description">Weight Image</string>
+    <string name="profile_management_activity_step_image_description">Step Image</string>
+    <string name="profile_management_activity_gender_image_description">Gender Image</string>
+    <string name="profile_management_activity_road_icon_description">Road Icon</string>
+    <string name="profile_management_activity_km_text_view"></string>
+    <string name="profile_management_activity_steps_icon_description">Steps Icon</string>
+    <string name="profile_management_activity_steps_stickman_image_description">Steps Stickman Icon</string>
+    <string name="profile_management_total_steps_text_view"></string>
+    <string name="profile_management_steps_text_view"></string>
+    <string name="profile_management_activity_clock2_image_description">Clock2 Image</string>
+    <string name="profile_management_activity_total_time_text_view"></string>
+    <string name="profile_management_activity_stickman_tapis_roulant_image_description">Stickman Tapis Roulant Image</string>
+    <string name="profile_management_activity_total_kcals_text_view">Stickman Tapis Roulant Image</string>
+    
+    
+    
+    <!-- Workout Statistics Activity Strings -->
+    <string name="workout_statistics_activity_name">workoutStatistics</string>
+    <string name="workout_statistics_activity_title">Statistiche Allenamento</string>
+    <string name="workout_statistics_activity_steps_stickman_image_description">Steps Stickman Image</string>
+    <string name="workout_statistics_activity_clock2_image_description">Clock2 Image</string>
+    <string name="workout_statistics_activity_stickman_tapis_roulant_image_description">Stickman Tapis Roulant Image</string>
+    <string name="workout_statistics_activity_tachimeter2_symbol_image_description">Tachimeter2 Image</string>
+    <string name="workout_statistics_activity_feet_symbol_image_description">Feet Image</string>
+    
+    
+    
+    <!-- New Workout Popup Strings -->
+    <string name="new_workout_popup_title">Settings Nuovo Allenamento</string>
+    <string name="new_workout_popup_workout_name_text_view">Nome Allenamento</string>
+    <string name="new_workout_popup_steps_per_minute_text_view">Velocità Media: Passi/Min</string>
+    <string name="new_workout_popup_cancel_button">Cancella</string>
+    <string name="new_workout_popup_start_workout_button">Inizia</string>
+    <string name="new_workout_popup_workout_name_error">Errore! Inserire un Nome Allenamento! </string>
+    <string name="new_workout_popup_mean_speed_error">Errore! Inserire la Velocità Media: Passi/Min! </string>
+    <string name="new_workout_popup_json_creation_error">Errore interno. Si prega di riprovare. </string>
+    
+    
+    
+    <!-- Error Activity Strings -->
+    <string name="error_activity_name">ErrorActivity</string>
+    <string name="error_activity_title">Profilo utente non trovato: inserire i propri dati premendo il pulsante "Gestione Profilo".</string>
+    <string name="error_activity_profile_management_button">Gestione Profilo</string>
+    <string name="error_activity_cancel_button">Indietro</string>
+    
+    
+    
+    <!-- Send Email Activity Strings -->
+    <string name="send_email_activity_name">SendEmailActivity</string>
+    <string name="send_email_activity_edit_text_to">Indirizzo Email!</string>
+    <string name="send_email_activity_edit_text_subject">Oggetto</string>
+    <string name="send_email_activity_edit_text_message">Inserisci il messaggio qua!</string>
+    <string name="send_email_activity_send_button">Soggetto</string>
+    <string name="send_email_activity_attachment_button">Allegati</string>
+    
+    
+    
+	<!-- Workout Elimination Confirm Popup Strings -->
+	<string name="workout_elimination_confirm_popup_message">Vuoi davvero eliminare questo allenamento?</string>
+	<string name="workout_elimination_confirm_popup_confirm">Conferma</string>
+	<string name="workout_elimination_confirm_popup_cancel">Annulla</string>
+    
+	
+	<!-- Statistics Reset Confirm Popup -->
+	<string name="statistics_reset_confirm_popup_message">Vuoi davvero resettare le statistiche?</string>
+	<string name="statistics_reset_confirm_popup_confirm">Conferma</string>
+	<string name="statistics_reset_confirm_popup_cancel">Annulla</string>
+	
+</resources>
